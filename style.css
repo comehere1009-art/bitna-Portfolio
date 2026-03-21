@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background: #dddddd;
+  background: #d9d9d9;
   font-family: 'Noto Sans KR', sans-serif;
   color: #111;
 }
@@ -17,106 +17,110 @@ body {
 
 /* 상단 */
 .hero {
-  padding-top: 20px;
+  padding-top: 16px;
+  padding-left: 22px;
 }
 
 .hero-box {
-  width: 1420px;
-  height: 250px;
+  width: 1280px;
+  height: 170px;
   background: #000;
-  border-bottom-right-radius: 70px;
+  border-bottom-right-radius: 46px;
   display: flex;
   align-items: flex-end;
-  padding: 24px 38px;
+  padding: 12px 22px 10px 22px;
 }
 
 .hero-box h1 {
   margin: 0;
   display: flex;
   align-items: flex-end;
-  gap: 20px;
+  gap: 14px;
   color: #fff;
   white-space: nowrap;
   font-family: 'Playfair Display', serif;
-  font-size: 165px;
-  line-height: 0.85;
+  font-size: 108px;
+  line-height: 0.82;
   font-weight: 900;
 }
 
 .hero-box h1 span {
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 64px;
+  font-size: 28px;
   font-weight: 900;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 }
 
 .hero-desc {
-  margin: 26px 0 0 36px;
-  font-size: 64px;
+  margin: 10px 0 0 22px;
+  font-size: 22px;
   line-height: 1.2;
+  font-weight: 400;
 }
 
-/* 섹션 */
+/* 본문 공통 */
+main {
+  padding: 0 22px;
+}
+
 .section {
-  padding-left: 36px;
-  padding-right: 36px;
-}
-
-.section-one {
-  padding-top: 90px;
-}
-
-.section-two {
-  padding-top: 110px;
-  padding-bottom: 90px;
+  padding-top: 64px;
 }
 
 .section h2 {
   margin: 0;
   font-family: 'Playfair Display', serif;
-  font-size: 120px;
-  line-height: 0.95;
+  font-size: 82px;
+  line-height: 0.92;
   font-weight: 900;
 }
 
 .section p {
-  margin: 34px 0 48px;
-  font-size: 64px;
-  line-height: 1.2;
+  margin: 18px 0 34px;
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 400;
 }
 
 .pill-wrap {
   display: flex;
   justify-content: center;
-  gap: 48px;
+  gap: 26px;
 }
 
 .pill {
-  min-width: 440px;
-  padding: 28px 34px;
+  min-width: 210px;
+  padding: 14px 24px;
   border-radius: 999px;
   background: #000;
   color: #fff;
   text-align: center;
-  font-size: 34px;
+  font-size: 15px;
+  line-height: 1.25;
   font-weight: 800;
-  line-height: 1.3;
+}
+
+/* 두 번째 섹션 여백 */
+.section-two {
+  padding-top: 90px;
+  padding-bottom: 54px;
 }
 
 /* 하단 */
 .footer-hero {
   position: relative;
-  height: 640px;
+  height: 360px;
   background: #000;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .footer-title {
   position: absolute;
-  left: 34px;
-  top: 18px;
-  width: 980px;
-  height: 420px;
+  left: 20px;
+  top: 6px;
+  width: 430px;
+  height: 220px;
   color: #fff;
 }
 
@@ -124,67 +128,75 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+  margin: 0;
   font-family: 'Playfair Display', serif;
-  font-size: 110px;
+  font-size: 54px;
   line-height: 0.9;
   font-weight: 900;
 }
 
 .footer-title .line2 {
   position: absolute;
-  left: 250px;
-  top: 72px;
+  left: 118px;
+  top: 34px;
+  margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 132px;
-  line-height: 0.9;
+  font-size: 66px;
+  line-height: 0.82;
   font-weight: 900;
 }
 
 .footer-title .line3 {
   position: absolute;
-  left: 340px;
-  top: 130px;
+  left: 165px;
+  top: 76px;
+  margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 132px;
-  line-height: 0.9;
+  font-size: 66px;
+  line-height: 0.82;
   font-weight: 900;
 }
 
 .footer-title .line4 {
   position: absolute;
-  left: 340px;
-  top: 240px;
+  left: 165px;
+  top: 126px;
+  margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
-  font-size: 132px;
-  line-height: 0.9;
+  font-size: 66px;
+  line-height: 0.82;
   font-weight: 900;
 }
 
 .contact {
   position: absolute;
-  right: 120px;
-  top: 240px;
+  right: 42px;
+  top: 120px;
   color: #fff;
+  text-align: left;
 }
 
 .contact h3 {
-  margin: 0 0 14px;
-  font-size: 34px;
+  margin: 0 0 10px;
+  font-size: 16px;
   font-weight: 800;
+  line-height: 1.2;
 }
 
 .contact p {
-  margin: 0 0 52px;
-  font-size: 26px;
+  margin: 0 0 24px;
+  font-size: 12px;
   line-height: 1.3;
+  font-weight: 400;
 }
 
 .copyright {
   position: absolute;
   left: 50%;
-  bottom: 18px;
+  bottom: 8px;
   transform: translateX(-50%);
   margin: 0;
   color: #fff;
-  font-size: 22px;
+  font-size: 11px;
+  line-height: 1;
 }

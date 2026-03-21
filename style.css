@@ -6,220 +6,137 @@ body {
   margin: 0;
   background: #d9d9d9;
   font-family: 'Noto Sans KR', sans-serif;
-  color: #111;
 }
 
+/* 전체 */
 .page {
   width: 1920px;
   margin: 0 auto;
   background: #efefef;
 }
 
-/* 상단 */
-.hero {
-  padding-top: 14px;
-  padding-left: 22px;
-}
+/* ================= 상단 ================= */
 
 .hero-box {
-  width: 1335px;
-  height: 175px;
+  width: 100%;
+  height: 260px;
   background: #000;
-  border-bottom-right-radius: 48px;
+
   display: flex;
-  align-items: flex-end;
-  padding: 10px 22px 10px 22px;
+  justify-content: center;   /* ⭐ 핵심: 가로 중앙 */
+  align-items: center;       /* ⭐ 핵심: 세로 중앙 */
 }
 
 .hero-box h1 {
   margin: 0;
   display: flex;
   align-items: flex-end;
-  gap: 14px;
+  gap: 20px;
+
   color: #fff;
-  white-space: nowrap;
   font-family: 'Playfair Display', serif;
-  font-size: 112px;
-  line-height: 0.82;
+  font-size: 180px;
   font-weight: 900;
 }
 
-.hero-box h1 span {
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 28px;
-  font-weight: 900;
-  margin-bottom: 10px;
+.hero-box span {
+  font-size: 60px;
+  position: relative;
+  bottom: 10px;
 }
 
-.hero-desc {
-  margin: 10px 0 0 10px;
-  font-size: 22px;
-  line-height: 1.2;
-  font-weight: 400;
+/* ================= 본문 ================= */
+
+.content {
+  padding: 30px 40px;
 }
 
-/* 본문 */
-main {
-  padding: 0 22px;
+.desc {
+  font-size: 48px;
+  margin-bottom: 80px;
 }
 
-.section {
-  padding-top: 54px;
+.block {
+  margin-bottom: 140px;
 }
 
-.section-two {
-  padding-top: 74px;
-  padding-bottom: 34px;
-}
-
-.section h2 {
+.block h2 {
+  font-size: 100px;
   margin: 0;
-  font-family: 'Playfair Display', serif;
-  font-size: 84px;
-  line-height: 0.92;
-  font-weight: 900;
 }
 
-.section p {
-  margin: 12px 0 28px;
-  font-size: 21px;
-  line-height: 1.25;
-  font-weight: 400;
+.sub {
+  font-size: 50px;
+  margin: 10px 0 60px;
 }
 
-/* 공통 버튼 정렬 */
-.pill-wrap {
+/* 버튼 */
+.btn-row {
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 60px;
 }
 
-/* 1번째 줄 준비중 버튼 */
-.section-one .pill {
-  min-width: 128px;
-  height: 34px;
-  padding: 0 22px;
-  border-radius: 999px;
+.pill {
+  width: 420px;
+  height: 110px;
   background: #000;
   color: #fff;
-  display: inline-flex;
+
+  border-radius: 999px;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 11px;
-  line-height: 1;
+
+  font-size: 28px;
   font-weight: 800;
-  white-space: nowrap;
 }
 
-/* 2번째 줄 긴 버튼 */
-.section-two .pill {
-  min-width: 170px;
-  height: 38px;
-  padding: 0 20px;
-  border-radius: 999px;
-  background: #000;
-  color: #fff;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
-  line-height: 1.15;
-  font-weight: 800;
+.pill.long {
+  width: 520px;
+  height: 130px;
+  font-size: 24px;
   text-align: center;
-  white-space: nowrap;
 }
 
-/* 하단 */
-.footer-hero {
+/* ================= 하단 ================= */
+
+.footer {
   position: relative;
-  height: 390px;
+  height: 420px;
   background: #000;
-  overflow: hidden;
-  margin-top: 18px;
-}
-
-.footer-title {
-  position: absolute;
-  left: 12px;
-  top: 6px;
-  width: 460px;
-  height: 230px;
   color: #fff;
 }
 
-.footer-title .line1 {
+.footer-text {
   position: absolute;
-  left: 0;
-  top: 0;
-  margin: 0;
+  left: 40px;
+  top: 20px;
+
   font-family: 'Playfair Display', serif;
-  font-size: 60px;
-  line-height: 0.9;
-  font-weight: 900;
+  font-size: 70px;
 }
 
-.footer-title .line2 {
-  position: absolute;
-  left: 118px;
-  top: 36px;
-  margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 70px;
-  line-height: 0.82;
-  font-weight: 900;
+.footer-text .a {
+  margin-left: 60px;
 }
 
-.footer-title .line3 {
-  position: absolute;
-  left: 170px;
-  top: 78px;
-  margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 70px;
-  line-height: 0.82;
-  font-weight: 900;
-}
-
-.footer-title .line4 {
-  position: absolute;
-  left: 170px;
-  top: 132px;
-  margin: 0;
-  font-family: 'Noto Sans KR', sans-serif;
-  font-size: 70px;
-  line-height: 0.82;
-  font-weight: 900;
+.footer-text .big {
+  margin-left: 120px;
+  font-size: 90px;
 }
 
 .contact {
   position: absolute;
-  right: 54px;
-  top: 136px;
-  color: #fff;
-  text-align: left;
+  right: 60px;
+  top: 150px;
+  font-size: 20px;
 }
 
-.contact h3 {
-  margin: 0 0 8px;
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 1.2;
-}
-
-.contact p {
-  margin: 0 0 22px;
-  font-size: 11px;
-  line-height: 1.3;
-  font-weight: 400;
-}
-
-.copyright {
+.copy {
   position: absolute;
+  bottom: 10px;
   left: 50%;
-  bottom: 8px;
   transform: translateX(-50%);
-  margin: 0;
-  color: #fff;
-  font-size: 10px;
-  line-height: 1;
 }

@@ -122,7 +122,22 @@ section {
   cursor: pointer;
   transition: background 0.3s ease;
 }
+.button-group .project-link {
+  display: inline-block;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 40px;
+  font-size: clamp(14px, 1.2vw, 18px);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
 
+.button-group .project-link:hover {
+  background-color: #333;
+}
 .button-group button:hover {
   background-color: #333;
 }

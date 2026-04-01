@@ -6,4 +6,5 @@ body {
 
 h1 {
   color: salmon;
+  text-overflow: calc(100% - 20px);
 }

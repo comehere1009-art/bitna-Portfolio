@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: "맑은 고딕", sans-serif;
+  line-height: 25px;
+  background-color: #fffaf0;
+  color: #5b4636;
+}
+
+header {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 10px 100px;
+}
+
+header img {
+  width: 300px;
+  border-radius: 560px;
+  border: 7px solid #5b4636;
+}
+
+header h1 {
+  margin-top: 10px;
+  color: #5b4636;
+  font-family: "Alfa Slab One", serif;
+  font-size: 55px;
+}
+
+h1, h2 {
+  font-family: "Alfa Slab One", serif;
+}
+
+p.caption {
+    color: #615d55;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* 본문 */
+main {
+  max-width: 800px;
+  width: 80%;
+  margin: 0px auto;
+  padding: 20px;
+
+}
+
+main img {
+  max-width: 100%;
+}
+
+h2 {
+  display: inline-block;
+  background-color: #fffaf0;
+  border: 2px dashed #5b4636;
+  border-radius: 20px;
+  padding: 12px 25px;
+  margin-top: 50px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+h2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+main img {
+  display: block;
+  margin: 50px auto;
+  max-width: 500px;
+  border-radius: 15px;
+}
+
+ol {
+  padding-left: 60px;
+}
+
+.friends {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.friend-card {
+  width: 135px;
+  background-color: #fffdf8;
+  border: 3px solid #684522;
+  border-radius: 18px;
+  padding: 15px 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 카드에 마우스 올렸을 때 */
+.friend-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* 카드 안 링크 */
+.friend-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* 카드 이미지 */
+.friend-card img {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  margin: 0 auto 10px;
+  display: block;
+}
+
+/* 카드 이름 */
+.friend-card h3 {
+  margin: 6px 0;
+  font-size: 18px;
+  color: #5b4636;
+}
+
+/* 카드 소개글 */
+.friend-card p {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0;
+  word-break: keep-all;
+}
+
+
+/* footer */
+footer {
+  background-color: #ffffff;
+  text-align: center;
+  color:#5b4636;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+footer a {
+    color:#5b4636;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+footer a:hover {
+    opacity: 0.5;
+    background-color: transparent;
+}
